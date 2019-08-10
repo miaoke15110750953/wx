@@ -1,0 +1,38 @@
+/* pages/home/home.wxss */
+/* 修饰电影区域 */
+/* 1.电影区域 */
+.movie{
+  display:flex;
+  padding:10rpx;
+  border-bottom:1rpx solid #ccc;
+}
+/* 2.左侧电影图片 */
+.movie-img{
+  width:300rpx;
+  height:500rpx;
+  margin-right:20rpx;
+}
+/* 3.右侧电影介绍 */
+.movie-info{
+  flex:1;  /*将右侧区域充满*/
+  font-size:30rpx;
+  line-height:2.5;
+}
+/* 4.右侧电影标题 */
+.movie-title{
+  color:#666;
+  font-size:40rpx;
+}
+/* 5.右侧电影评分 */
+.movie-score{
+  color:#faaf00;
+}
+/* 6.右侧电影详情按钮 */
+.movie-comment{
+  height:60rpx;
+  background:#e54847;
+  color:#fff;
+  font-size:26rpx;
+  margin-top:100rpx;
+}
+

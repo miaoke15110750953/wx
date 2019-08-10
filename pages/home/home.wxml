@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<!-- 学子商城首页--娱乐 -->
+<view class="movie" wx:for="{{list}}" wx:key="index">
+  <!-- 左侧：电影海报图片 -->
+  <image class="movie-img" src="{{item.images.small}}"></image>
+  <!-- 右侧：电影介绍 -->
+  <view class="movie-info">
+  <!-- 右侧：电影标题 -->
+    <view class="movie-title">{{item.title}}</view>
+  <!-- 右侧：电影评分 -->
+    <view>观众评分:
+      <text class="movie-score">{{item.rating.average}}</text>
+    </view>
+  <!-- 右侧：电影主演 -->
+    <view>主演：
+      <text wx:for="{{item.casts}}" wx:key="index">{{item.name}}</text>
+    </view>
+  <!-- 右侧：电影年份 -->
+    <view>年份：{{item.year}}</view>
+  <!-- 右侧：详情按钮 -->
+    <button class="movie-comment" bindtap="jumpComment" data-id="{{item.id}}">详情</button>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/mymovie/mymovie.wxml-->
+<view class="mymoive">
+<!-- 输入框 上传按钮 提交按钮 -->
+  
+    <van-field
+      value="{{ content }}"
+      placeholder="写下你此时的心情"
+      bind:change="onContentChange"
+    />
+  <van-button type="primary" size="large" bindtap="myupload">上传一张图片</van-button>
+  <view></view>
+  <van-button type="danger" size="large" bindtap='mysubmit'>提交</van-button>
+</view>
